@@ -24,6 +24,16 @@ export const uploadProfilePicAction = ({ callback, accessToken, ...data }) => {
   };
 };
 
+export const httpRequestAction = (method, url, headers, body) => ({
+  type: HTTP_REQUEST,
+  payload: {
+    method,
+    url,
+    headers,
+    body,
+  },
+});
+
 export const uploadVideoAction = ({ accessToken, callback, ...data }) => {
   return {
     type: actionTypes.UPLOAD_VIDEO,

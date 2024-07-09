@@ -24,6 +24,16 @@ export const logInUserAction = ({ email, password, callback }) => {
   };
 };
 
+export const httpRequestAction = (method, url, headers, body) => ({
+  type: HTTP_REQUEST,
+  payload: {
+    method,
+    url,
+    headers,
+    body,
+  },
+});
+
 export const unlockUserAction = ({ email, code, callback }) => {
   console.log("unlockUserAction", email, code, callback);
   return {

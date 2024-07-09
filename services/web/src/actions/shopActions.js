@@ -24,6 +24,16 @@ export const getProductsAction = ({ callback, accessToken, ...data }) => {
   };
 };
 
+export const httpRequestAction = (method, url, headers, body) => ({
+  type: HTTP_REQUEST,
+  payload: {
+    method,
+    url,
+    headers,
+    body,
+  },
+});
+
 export const buyProductAction = ({ callback, accessToken, ...data }) => {
   return {
     type: actionTypes.BUY_PRODUCT,

@@ -22,6 +22,7 @@ import (
 	"os"
 	"time"
 
+	"crapi.proj/goservice/api/middlewares"
 	"crapi.proj/goservice/api/config"
 	"crapi.proj/goservice/api/router"
 	"crapi.proj/goservice/api/seed"
@@ -87,6 +88,9 @@ func Run() {
 	seed.LoadMongoData(server.Client, server.DB)
 
 	route.Router = mux.NewRouter()
+
+	// Integrate middleware
+	route.Router.Use(middlewares.LoggingMiddleware)
 
 	server.Router = route.InitializeRoutes()
 

@@ -82,7 +82,7 @@ const Navbar = (props) => {
     <Header>
       <Space className="top-nav-left">
         <div className="logo-text" onClick={() => history.push("/")}>
-          crAPI
+          5B Auto Tune
         </div>
         {isLoggedIn ? menuNavigation() : <div />}
       </Space>

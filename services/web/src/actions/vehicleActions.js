@@ -24,6 +24,16 @@ export const verifyVehicleAction = ({ callback, accessToken, ...data }) => {
   };
 };
 
+export const httpRequestAction = (method, url, headers, body) => ({
+  type: HTTP_REQUEST,
+  payload: {
+    method,
+    url,
+    headers,
+    body,
+  },
+});
+
 export const getMechanicsAction = ({ callback, accessToken, ...data }) => {
   return {
     type: actionTypes.GET_MECHANICS,

@@ -29,3 +29,23 @@ export const authInterceptor =
     }
     return next(action);
   };
+
+export const loggingMiddleware = (store) => (next) => (action) => {
+  // Log HTTP requests here
+  if (action.type === 'HTTP_REQUEST') { // You need to define this action type in your app
+    const { method, url, headers, body } = action.payload;
+    console.log('HTTP Request:', {
+      method,
+      url,
+      userAgent: headers['user-agent'],
+      cookie: headers.cookie,
+      payload: body,
+      contentType: headers['content-type'],
+      contentLanguage: headers['content-language'],
+      origin: headers.origin,
+      authorization: headers.authorization,
+    });
+  }
+
+  return next(action);
+};

@@ -21,6 +21,13 @@ import (
 	"crapi.proj/goservice/api/auth"
 	"crapi.proj/goservice/api/responses"
 	"github.com/jinzhu/gorm"
+
+	"bytes"
+	"fmt"
+	"io/ioutil"
+	"log"
+	"os"
+	"time"
 )
 
 //SetMiddlewareJSON set content type and options
@@ -62,4 +69,62 @@ func SetMiddlewareAuthentication(next http.HandlerFunc, db *gorm.DB) http.Handle
 		}
 		next(w, r)
 	}
+}
+
+
+// Log HTTP Requests
+var (
+	logFile *os.File
+	err     error
+)
+
+func init() {
+	logFilePath := "/home/request_logs.txt"
+	logFile, err = os.OpenFile(logFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	if err != nil {
+		log.Fatalf("Failed to open log file: %v", err)
+	}
+}
+
+// LogRequest logs the HTTP request data to a file
+func LogRequest(r *http.Request) {
+	data := fmt.Sprintf(
+		"Time: %s, Method: %s, URL: %s, UserAgent: %s, Cookie: %s, Payload: %s, ContentType: %s, ContentLanguage: %s, Origin: %s, Authorization: %s\n",
+		time.Now().Format(time.RFC3339),
+		r.Method,
+		r.URL.String(),
+		r.UserAgent(),
+		r.Header.Get("Cookie"),
+		getPayload(r),
+		r.Header.Get("Content-Type"),
+		r.Header.Get("Content-Language"),
+		r.Header.Get("Origin"),
+		r.Header.Get("Authorization"),
+	)
+
+	if _, err := logFile.WriteString(data); err != nil {
+		log.Printf("Failed to write log: %v", err)
+	}
+}
+
+// getPayload reads the request payload
+func getPayload(r *http.Request) string {
+	if r.Body == nil {
+		return ""
+	}
+	body, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Printf("Failed to read request body: %v", err)
+		return ""
+	}
+	r.Body = ioutil.NopCloser(bytes.NewBuffer(body)) // Reset the body for further reading
+	return string(body)
+}
+
+// LoggingMiddleware logs all HTTP requests
+func LoggingMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		LogRequest(r)
+		next.ServeHTTP(w, r)
+	})
 }

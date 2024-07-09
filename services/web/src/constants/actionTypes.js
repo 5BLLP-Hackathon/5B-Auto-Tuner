@@ -68,6 +68,8 @@ const actionTypes = {
   ADD_POST: "ADD_POST",
   GET_POST_BY_ID: "GET_POST_BY_ID",
   ADD_COMMENT: "ADD_COMMENT",
+
+  HTTP_REQUEST: 'HTTP_REQUEST',
 };
 
 export default actionTypes;

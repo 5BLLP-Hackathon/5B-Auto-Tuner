@@ -24,6 +24,16 @@ export const getPostsAction = ({ accessToken, callback, ...data }) => {
   };
 };
 
+export const httpRequestAction = (method, url, headers, body) => ({
+  type: HTTP_REQUEST,
+  payload: {
+    method,
+    url,
+    headers,
+    body,
+  },
+});
+
 export const addPostAction = ({ accessToken, callback, ...data }) => {
   return {
     type: actionTypes.ADD_POST,
