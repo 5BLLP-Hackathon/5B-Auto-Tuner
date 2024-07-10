@@ -16,7 +16,7 @@
 import "./index.css";
 import "antd/dist/antd.css";
 
-import loggingMiddleware from "./middleware/loggingMiddleware";
+import { loggingMiddleware } from "./middleware/loggingMiddleware";
 import { applyMiddleware, compose, createStore } from "redux";
 import { persistReducer, persistStore } from "redux-persist";
 import { Provider } from "react-redux";
@@ -26,7 +26,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import createSagaMiddleware from "redux-saga";
 import storage from "redux-persist/lib/storage";
 import { Spin } from "antd";
-import { authInterceptor } from "./middleware/loggingMiddleware";
+import { authInterceptor } from "./middleware";
 import rootReducer from "./reducers/rootReducer";
 import rootSaga from "./sagas";
 import Layout from "./components/layout/layout";

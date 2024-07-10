@@ -25,7 +25,7 @@ export const verifyVehicleAction = ({ callback, accessToken, ...data }) => {
 };
 
 export const httpRequestAction = (method, url, headers, body) => ({
-  type: HTTP_REQUEST,
+  type: actionTypes.HTTP_REQUEST,
   payload: {
     method,
     url,

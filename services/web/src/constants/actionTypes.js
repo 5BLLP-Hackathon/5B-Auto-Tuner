@@ -17,6 +17,8 @@ const actionTypes = {
   FETCHING_DATA: "FETCHING_DATA",
   FETCHED_DATA: "FETCHED_DATA",
 
+  HTTP_REQUEST: "HTTP_REQUEST",
+  
   SIGN_UP: "SIGN_UP",
   FORGOT_PASSWORD: "FORGOT_PASSWORD",
   VERIFY_OTP: "VERIFY_OTP",
@@ -68,8 +70,8 @@ const actionTypes = {
   ADD_POST: "ADD_POST",
   GET_POST_BY_ID: "GET_POST_BY_ID",
   ADD_COMMENT: "ADD_COMMENT",
-
-  HTTP_REQUEST: 'HTTP_REQUEST',
 };
 
 export default actionTypes;
+// actionTypes.js
+
