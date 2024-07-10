@@ -60,7 +60,7 @@ type PaymentInfoResponse struct {
 
 func HelloServer(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("Content-Type", "text/plain")
-	w.Write([]byte("crAPI Gateway.\n"))
+	w.Write([]byte("5B Auto Tuner Gateway.\n"))
 }
 
 func GetOwners(w http.ResponseWriter, r *http.Request) {

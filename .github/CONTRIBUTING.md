@@ -1,5 +1,5 @@
 # Contributing
-We like contributions, Thanks for taking time to contribute and helping us make this project better! The following is a set of guidelines for contributing to crAPI. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+We like contributions, Thanks for taking time to contribute and helping us make this project better! The following is a set of guidelines for contributing to 5B Auto Tuner. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
 or `#crapi` channel on [OWASP slack](https://join.slack.com/t/owasp/shared_invite/zt-18rwlvzj6-BmIjvJj9gW6QUQG0fEusMQ) with the owners of this repository before making a change.

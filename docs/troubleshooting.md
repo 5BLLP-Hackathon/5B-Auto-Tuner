@@ -1,4 +1,4 @@
-# Troubleshooting guide for general issues while installing and running crAPI
+# Troubleshooting guide for general issues while installing and running 5B Auto Tuner
 
 
 **1. Problem:** While running `docker-compose pull` or `docker-compose -f docker-compose.yml --compatibility up -d` if you see this:

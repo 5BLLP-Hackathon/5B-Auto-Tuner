@@ -33,10 +33,10 @@ curl -sL https://github.com/docker/compose/releases/download/v2.5.0/docker-compo
 chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-# Build crAPI 
+# Build 5B Auto Tuner 
 # "$MOUNT_DIR/deploy/docker/build-all.sh"
 
-# Install crAPI using prebuilt images
+# Install 5B Auto Tuner using prebuilt images
 mkdir /opt/crapi
 
 cp "$MOUNT_DIR/deploy/docker/docker-compose.yml" /opt/crapi \
@@ -46,7 +46,7 @@ cp "$MOUNT_DIR/deploy/vagrant/crapi.service" /etc/systemd/system/ \
     && systemctl daemon-reload \
     && systemctl enable crapi.service
 
-# Start crAPI
+# Start 5B Auto Tuner
 systemctl start crapi
 
 # Cleanup

@@ -25,6 +25,6 @@ type Server config.Server
 
 //Home API is for testing without token
 func (server *Server) Home(w http.ResponseWriter, r *http.Request) {
-	responses.JSON(w, http.StatusOK, "Welcome To This crAPI API")
+	responses.JSON(w, http.StatusOK, "Welcome To This 5B Auto Tuner API")
 
 }

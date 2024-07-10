@@ -155,7 +155,7 @@ public class OtpServiceImpl implements OtpService {
         otpRepository.save(checkOtpEnteryForUser);
         // Sent OTP mail to user email address.
         smtpMailServer.sendMail(
-            user.getEmail(), MailBody.otpMailBody(checkOtpEnteryForUser), "crAPI OTP");
+            user.getEmail(), MailBody.otpMailBody(checkOtpEnteryForUser), "5B Auto Tuner OTP");
         return new CRAPIResponse(UserMessage.OTP_SEND_SUCCESS_ON_EMAIL + user.getEmail(), 200);
       }
       throw new RuntimeException();

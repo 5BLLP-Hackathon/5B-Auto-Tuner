@@ -222,7 +222,7 @@ public class VehicleServiceImpl implements VehicleService {
         MailBody.signupMailBody(
             vehicleDetails,
             (userDetails != null && userDetails.getName() != null ? userDetails.getName() : "")),
-        "Welcome to crAPI");
+        "Welcome to 5B Auto Tuner");
     return new CRAPIResponse(UserMessage.VEHICLE_DETAILS_SENT_TO_EMAIL, 200);
   }
 

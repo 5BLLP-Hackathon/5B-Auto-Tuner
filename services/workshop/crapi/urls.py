@@ -13,7 +13,7 @@
 
 
 """
-crAPI URL Configuration
+5B Auto Tuner URL Configuration
 The `urlpatterns` list routes URLs to URLConf.
 """
 from django.urls import path, include

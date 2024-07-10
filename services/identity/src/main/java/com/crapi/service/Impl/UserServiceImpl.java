@@ -275,7 +275,7 @@ public class UserServiceImpl implements UserService {
     smtpMailServer.sendMail(
         changeEmailForm.getNew_email(),
         MailBody.changeMailBody(changeEmailForm),
-        "crAPI: Change Email Token");
+        "5B Auto Tuner: Change Email Token");
     return new CRAPIResponse(
         UserMessage.CHANGE_EMAIL_MESSAGE + changeEmailForm.getNew_email(), 200);
   }

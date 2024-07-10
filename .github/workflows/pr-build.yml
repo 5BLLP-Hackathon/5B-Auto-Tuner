@@ -148,7 +148,7 @@ jobs:
         continue-on-error: true
         run:  docker-compose -f deploy/docker/docker-compose.yml down --volumes --remove-orphans
 
-      - name: Run crAPI using built images
+      - name: Run 5B Auto Tuner using built images
         run: VERSION=${{ env.TAG_NAME }} docker-compose -f deploy/docker/docker-compose.yml --compatibility up -d
 
       - name: Install Node
@@ -160,7 +160,7 @@ jobs:
         run: npm install -g newman
 
       - name: Run Postman Collection
-        run: newman run "./postman_collections/crAPI.postman_collection.json" -e ./postman_collections/crAPI.postman_environment.json --verbose
+        run: newman run "./postman_collections/5B Auto Tuner.postman_collection.json" -e ./postman_collections/5B Auto Tuner.postman_environment.json --verbose
 
       - name: Dump docker logs on failure
         if: failure()

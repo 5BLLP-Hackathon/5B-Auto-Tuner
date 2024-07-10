@@ -1,4 +1,4 @@
-# crAPI Code of Conduct
+# 5B Auto Tuner Code of Conduct
 
 ## Our Pledge
 

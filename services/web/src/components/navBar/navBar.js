@@ -29,7 +29,7 @@ const { Header } = Layout;
  * top navigation bar that contains
  * if not logged in:
  * Login button,
- * crAPI icon,
+ * 5B Auto Tuner icon,
  * if logged in :
  * dropdown to navigate to change Password or My Profile
  * dropdown alos consists the logout button

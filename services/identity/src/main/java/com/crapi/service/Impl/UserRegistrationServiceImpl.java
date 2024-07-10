@@ -112,7 +112,7 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
                 (userDetails != null && userDetails.getName() != null
                     ? userDetails.getName()
                     : "")),
-            "Welcome to crAPI");
+            "Welcome to 5B Auto Tuner");
         return new CRAPIResponse(UserMessage.SIGN_UP_SUCCESS_MESSAGE, 200);
       }
       throw new EntityNotFoundException(

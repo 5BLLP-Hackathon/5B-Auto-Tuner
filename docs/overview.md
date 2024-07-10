@@ -1,11 +1,11 @@
-Overview | crAPI
+Overview | 5B Auto Tuner
 ================
 
-At a high level, the crAPI application is modeled as a B2C application that allows any user to get their car servicing done by a car mechanic. A user can create an account on the WebApp, manage his/her cars, search for car mechanics, submit servicing request for any car, and purchase car accessories from the vendor. The WebApp also has a community section where users can contribute with blog posts and comments.
+At a high level, the 5B Auto Tuner application is modeled as a B2C application that allows any user to get their car servicing done by a car mechanic. A user can create an account on the WebApp, manage his/her cars, search for car mechanics, submit servicing request for any car, and purchase car accessories from the vendor. The WebApp also has a community section where users can contribute with blog posts and comments.
 
-The crAPI application, by design, does not implement all of its functionalities in the most secure manner. In other words, it deliberately exposes security vulnerabilities that can be exploited by any security enthusiast who is playing with the application. For more details on the vulnerabilities see the [challenges.md][0]
+The 5B Auto Tuner application, by design, does not implement all of its functionalities in the most secure manner. In other words, it deliberately exposes security vulnerabilities that can be exploited by any security enthusiast who is playing with the application. For more details on the vulnerabilities see the [challenges.md][0]
 
-crAPI has a microservices architecture comprising the following services developed using different technologies: 
+5B Auto Tuner has a microservices architecture comprising the following services developed using different technologies: 
 
 * web: Main Ingress service
 * identity: User and authentication endpoints
@@ -21,7 +21,7 @@ crAPI has a microservices architecture comprising the following services develop
 For deployment options, visit [the setup instructions](setup.md).
 ---
 
-To know more about challenges in crAPI, visit [challenges].
+To know more about challenges in 5B Auto Tuner, visit [challenges].
 ----
 
 [challenges]: challenges.md

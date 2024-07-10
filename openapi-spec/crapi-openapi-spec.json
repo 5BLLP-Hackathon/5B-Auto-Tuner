@@ -1,12 +1,12 @@
 {
   "openapi" : "3.0.1",
   "info" : {
-    "title" : "OWASP crAPI API",
+    "title" : "OWASP 5B Auto Tuner API",
     "version" : "1-oas3"
   },
   "externalDocs" : {
-    "description" : "Completely Ridiculous API (crAPI)",
-    "url" : "https://github.com/OWASP/crAPI"
+    "description" : "Completely Ridiculous API (5B Auto Tuner)",
+    "url" : "https://github.com/OWASP/5B Auto Tuner"
   },
   "servers" : [ {
     "url" : "http://localhost:8888"

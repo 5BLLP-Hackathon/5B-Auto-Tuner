@@ -1,14 +1,14 @@
 # Intro
 
-This is the crAPI challenge page.
+This is the 5B Auto Tuner challenge page.
 
-crAPI (Completely Ridiculous Application Programmer Interface) defines an API which is intentionally vulnerable to the OWASP API Top 10 vulnerabilities. crAPI is meant to illustrate and educate by presenting these issues for you to discover and exploit.
+5B Auto Tuner (Completely Ridiculous Application Programmer Interface) defines an API which is intentionally vulnerable to the OWASP API Top 10 vulnerabilities. 5B Auto Tuner is meant to illustrate and educate by presenting these issues for you to discover and exploit.
 
-The crAPI challenge is for you to find and exploit as many of these vulnerabilities as you can.
+The 5B Auto Tuner challenge is for you to find and exploit as many of these vulnerabilities as you can.
 
-There are two approaches to hack crAPI - the first is to look at it as a complete black box test, where you get no directions, but just try to understand the app from scratch and hack it.
+There are two approaches to hack 5B Auto Tuner - the first is to look at it as a complete black box test, where you get no directions, but just try to understand the app from scratch and hack it.
 
-The second approach is using this page, which will give you an idea about which vulnerabilities exist in crAPI and will direct you on how to exploit them. 
+The second approach is using this page, which will give you an idea about which vulnerabilities exist in 5B Auto Tuner and will direct you on how to exploit them. 
 
 # Challenges
 
@@ -24,7 +24,7 @@ To solve the challenge, you need to leak sensitive information of another user�
 
 ### Challenge 2 - Access mechanic reports of other users
 
-crAPI allows vehicle owners to contact their mechanics by submitting a "contact mechanic" form. This challenge is about accessing mechanic reports that were submitted by other users.
+5B Auto Tuner allows vehicle owners to contact their mechanics by submitting a "contact mechanic" form. This challenge is about accessing mechanic reports that were submitted by other users.
 
 * Analyze the report submission process
 
@@ -36,7 +36,7 @@ crAPI allows vehicle owners to contact their mechanics by submitting a "contact 
 
 ### Challenge 3 - Reset the password of a different user
 
-* Find an email address of another user on crAPI
+* Find an email address of another user on 5B Auto Tuner
 
 * Brute forcing might be the answer. If you face any protection mechanisms, remember to leverage the predictable nature of REST APIs to find more similar API endpoints.
 
@@ -64,7 +64,7 @@ In this challenge, you need to find an internal property of the video resource t
 
 ### Challenge 8 - Get an item for free
 
-crAPI allows users to return items they have ordered. You simply click the "return order" button, receive a QR code and show it in a USPS store.
+5B Auto Tuner allows users to return items they have ordered. You simply click the "return order" button, receive a QR code and show it in a USPS store.
 To solve this challenge, you need to find a way to get refunded for an item that you haven’t actually returned.
 
 * Leverage the predictable nature of REST APIs to find a shadow API endpoint that allows you to edit properties of a specific order.
@@ -79,7 +79,7 @@ After solving the "Find an API endpoint that leaks an internal property of video
 
 ## SSRF
 
-### Challenge 11 - Make crAPI send an HTTP call to "[www.google.com](www.google.com)" and return the HTTP response. 
+### Challenge 11 - Make 5B Auto Tuner send an HTTP call to "[www.google.com](www.google.com)" and return the HTTP response. 
 
 ## NoSQL Injection
 
@@ -97,8 +97,8 @@ After solving the "Find an API endpoint that leaks an internal property of video
 
 ### Challenge 15 - Find a way to forge valid JWT Tokens
 
-JWT Authentication in crAPI is vulnerable to various attacks. Find any one way to forge a valid JWT token and get full access to the platform.
+JWT Authentication in 5B Auto Tuner is vulnerable to various attacks. Find any one way to forge a valid JWT token and get full access to the platform.
 
 ## << 2 secret challenges >>
 
-There are two more secret challenges in crAPI, that are pretty complex, and for now we don’t share details about them, except the fact they are really cool. 
+There are two more secret challenges in 5B Auto Tuner, that are pretty complex, and for now we don’t share details about them, except the fact they are really cool. 
