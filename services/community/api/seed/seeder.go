@@ -48,19 +48,11 @@ var coupons = []models.Coupon{
 //initialize Post data
 var posts = []models.Post{
 	{
-		Title:   "Title 1",
-		Content: "Hello world 1",
-	},
-	{
-		Title:   "Title 2",
-		Content: "Hello world 2",
-	},
-	{
-		Title:   "Title 3",
-		Content: "Hello world 3",
+		Title:   "Forum rules by Bhupendra@5B",
+		Content: "Hello Tuners! Welcome to our car tuner garage forum! To ensure everyone enjoys a positive and productive experience, we've put together a set of community guidelines: Respect Each Other: Treat fellow tuners with respect and courtesy. We're all here to learn and share our passion for car tuning. Stay On Topic: Keep discussions relevant to car tuning, modifications, performance enhancements, and related topics. Off-topic posts may be removed. No Spam or Advertising: Avoid spamming the forum with advertisements or promotional content. If you're unsure whether something qualifies as spam, reach out to a moderator. Be Helpful: Share your knowledge and experiences to help others. Constructive criticism is welcome, but be mindful of others' perspectives. No Personal Attacks or Hate Speech: Offensive language, personal attacks, or discriminatory remarks will not be tolerated. This includes any form of hate speech or bullying. Respect Privacy: Do not share personal or sensitive information about others without their consent. Use Clear and Respectful Language: Communicate clearly and use language that is appropriate for all ages and backgrounds. Report Issues: If you encounter a problem or notice a violation of these guidelines, report it to the moderators. Do not attempt to handle it yourself. Respect Copyright: Do not post copyrighted material without permission. If you're sharing content from other sources, give proper credit. Have Fun and Learn: Above all, enjoy your time here and learn from each other's experiences. We're a community passionate about car tuning! These guidelines are here to ensure our forum remains a friendly and informative space for all members. Let's build a supportive community where everyone can share their love for car tuning. Happy tuning! Best regards, Bhupendra",
 	},
 }
-var emails = [3]string{"adam007@example.com", "pogba006@example.com", "robot001@example.com"}
+var emails = [3]string{"bhupendra@5b.com"}
 
 //
 func LoadMongoData(mongoClient *mongo.Client, db *gorm.DB) {

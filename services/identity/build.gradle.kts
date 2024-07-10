@@ -58,6 +58,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation ("jakarta.servlet:jakarta.servlet-api:5.0.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("io.jsonwebtoken:jjwt:0.12.5")
     implementation("com.nimbusds:nimbus-jose-jwt:9.37.3")

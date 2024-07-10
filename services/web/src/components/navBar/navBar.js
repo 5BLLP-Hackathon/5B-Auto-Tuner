@@ -82,7 +82,7 @@ const Navbar = (props) => {
     <Header>
       <Space className="top-nav-left">
         <div className="logo-text" onClick={() => history.push("/")}>
-          5B Auto Tune
+          5B Auto Tuner
         </div>
         {isLoggedIn ? menuNavigation() : <div />}
       </Space>

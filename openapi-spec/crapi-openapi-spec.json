@@ -1495,46 +1495,18 @@
                 },
                 "example" : [ {
                   "id" : "ConZLXacq3MqhbLQDrbNLf",
-                  "title" : "Title 3",
-                  "content" : "Hello world 3",
+                  "title" : "Forum rules by Bhupendra@5B",
+                  "content" : "Hello Tuners! Welcome to our car tuner garage forum! To ensure everyone enjoys a positive and productive experience, we've put together a set of community guidelines: Respect Each Other: Treat fellow tuners with respect and courtesy. We're all here to learn and share our passion for car tuning. Stay On Topic: Keep discussions relevant to car tuning, modifications, performance enhancements, and related topics. Off-topic posts may be removed. No Spam or Advertising: Avoid spamming the forum with advertisements or promotional content. If you're unsure whether something qualifies as spam, reach out to a moderator. Be Helpful: Share your knowledge and experiences to help others. Constructive criticism is welcome, but be mindful of others' perspectives. No Personal Attacks or Hate Speech: Offensive language, personal attacks, or discriminatory remarks will not be tolerated. This includes any form of hate speech or bullying. Respect Privacy: Do not share personal or sensitive information about others without their consent. Use Clear and Respectful Language: Communicate clearly and use language that is appropriate for all ages and backgrounds. Report Issues: If you encounter a problem or notice a violation of these guidelines, report it to the moderators. Do not attempt to handle it yourself. Respect Copyright: Do not post copyrighted material without permission. If you're sharing content from other sources, give proper credit. Have Fun and Learn: Above all, enjoy your time here and learn from each other's experiences. We're a community passionate about car tuning! These guidelines are here to ensure our forum remains a friendly and informative space for all members. Let's build a supportive community where everyone can share their love for car tuning. Happy tuning! Best regards, Bhupendra",
                   "author" : {
-                    "nickname" : "Hacker",
-                    "email" : "hacker@darkweb.com",
+                    "nickname" : "Bhupendra",
+                    "email" : "bhupendra@5b.com",
                     "vehicleid" : "abac4018-5a38-466c-ab7f-361908afeab6",
                     "profile_pic_url" : "",
                     "created_at" : "2021-09-16T01:46:32.432Z"
                   },
                   "comments" : [ ],
-                  "authorid" : 3,
-                  "CreatedAt" : "2021-09-16T01:46:32.432Z"
-                }, {
-                  "id" : "rj2md2VVDBjYUGNG6LmQ9e",
-                  "title" : "Title 2",
-                  "content" : "Hello world 2",
-                  "author" : {
-                    "nickname" : "Victim Two",
-                    "email" : "victim.two@example.com",
-                    "vehicleid" : "8b9edbde-d74d-4773-8c9f-adb65c6056fc",
-                    "profile_pic_url" : "",
-                    "created_at" : "2021-09-16T01:46:32.429Z"
-                  },
-                  "comments" : [ ],
-                  "authorid" : 2,
-                  "CreatedAt" : "2021-09-16T01:46:32.429Z"
-                }, {
-                  "id" : "C68Hgjaow2jieF59LWzqTH",
-                  "title" : "Title 1",
-                  "content" : "Hello world 1",
-                  "author" : {
-                    "nickname" : "Victim One",
-                    "email" : "victim.one@example.com",
-                    "vehicleid" : "649acfac-10ea-43b3-907f-752e86eff2b6",
-                    "profile_pic_url" : "",
-                    "created_at" : "2021-09-16T01:46:32.413Z"
-                  },
-                  "comments" : [ ],
                   "authorid" : 1,
-                  "CreatedAt" : "2021-09-16T01:46:32.413Z"
+                  "CreatedAt" : "2024-03-16T01:46:32.432Z"
                 } ]
               }
             }
@@ -3056,21 +3028,21 @@
             "type" : "string"
           }
         },
-        "example" : {
-          "id" : "ConZLXacq3MqhbLQDrbNLf",
-          "title" : "Title 3",
-          "content" : "Hello world 3",
-          "author" : {
-            "nickname" : "Hacker",
-            "email" : "hacker@darkweb.com",
-            "vehicleid" : "abac4018-5a38-466c-ab7f-361908afeab6",
-            "profile_pic_url" : "",
-            "created_at" : "2021-09-16T01:46:32.432Z"
-          },
-          "comments" : [ ],
-          "authorid" : 3,
-          "CreatedAt" : "2021-09-16T01:46:32.432Z"
-        }
+        "example" :  {
+                  "id" : "ConZLXacq3MqhbLQDrbNLf",
+                  "title" : "Forum rules by Bhupendra@5B",
+                  "content" : "Hello Tuners! Welcome to our car tuner garage forum! To ensure everyone enjoys a positive and productive experience, we've put together a set of community guidelines: Respect Each Other: Treat fellow tuners with respect and courtesy. We're all here to learn and share our passion for car tuning. Stay On Topic: Keep discussions relevant to car tuning, modifications, performance enhancements, and related topics. Off-topic posts may be removed. No Spam or Advertising: Avoid spamming the forum with advertisements or promotional content. If you're unsure whether something qualifies as spam, reach out to a moderator. Be Helpful: Share your knowledge and experiences to help others. Constructive criticism is welcome, but be mindful of others' perspectives. No Personal Attacks or Hate Speech: Offensive language, personal attacks, or discriminatory remarks will not be tolerated. This includes any form of hate speech or bullying. Respect Privacy: Do not share personal or sensitive information about others without their consent. Use Clear and Respectful Language: Communicate clearly and use language that is appropriate for all ages and backgrounds. Report Issues: If you encounter a problem or notice a violation of these guidelines, report it to the moderators. Do not attempt to handle it yourself. Respect Copyright: Do not post copyrighted material without permission. If you're sharing content from other sources, give proper credit. Have Fun and Learn: Above all, enjoy your time here and learn from each other's experiences. We're a community passionate about car tuning! These guidelines are here to ensure our forum remains a friendly and informative space for all members. Let's build a supportive community where everyone can share their love for car tuning. Happy tuning! Best regards, Bhupendra",
+                  "author" : {
+                    "nickname" : "Bhupendra",
+                    "email" : "bhupendra@5b.com",
+                    "vehicleid" : "abac4018-5a38-466c-ab7f-361908afeab6",
+                    "profile_pic_url" : "",
+                    "created_at" : "2021-09-16T01:46:32.432Z"
+                  },
+                  "comments" : [ ],
+                  "authorid" : 1,
+                  "CreatedAt" : "2024-03-16T01:46:32.432Z"
+                }
       },
       "Author" : {
         "title" : "Author",
